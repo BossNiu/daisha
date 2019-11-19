@@ -1,0 +1,56 @@
+
+.normal{
+  width: 1005;
+  height: 625px;
+  background: url('../img/welcome.jpg') no-repeat;
+  background-size:1400px;
+  overflow: hidden;
+}
+.box{
+  width: 500px;
+  height: 400px;
+  background: rgba(201, 192, 192, 0.5);
+  margin-top: 100px;
+  margin-left: 420px;
+  border-radius: 10px;
+}
+.btn{
+  width: 400px;
+  height: 70px;
+  border-radius: 15px;
+  background: sandybrown;
+  margin-left: 50px;
+  margin-top: 24px;
+  border: 0;
+  color: yellow;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.btn:hover{
+  background: yellow;
+  color: saddlebrown;
+}
+.yonghu{
+  width: 200px;
+  height: 40px;
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border-radius: 20px;
+}
+.yonghu p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: yellow;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.yonghu p span{
+  color: aqua;
+  margin-right: 6px;
+  font-size: 12px;
+}

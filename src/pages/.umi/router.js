@@ -3,10 +3,36 @@ import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@tmp/history';
+import { routerRedux } from 'dva';
 
-const Router = DefaultRouter;
+const Router = routerRedux.ConnectedRouter;
 
 const routes = [
+  {
+    path: '/gather',
+    exact: true,
+    component: require('../gather.js').default,
+  },
+  {
+    path: '/',
+    exact: true,
+    component: require('../index.js').default,
+  },
+  {
+    path: '/login',
+    exact: true,
+    component: require('../login.js').default,
+  },
+  {
+    path: '/users',
+    exact: true,
+    component: require('../users.js').default,
+  },
+  {
+    path: '/welcome',
+    exact: true,
+    component: require('../welcome.js').default,
+  },
   {
     component: () =>
       React.createElement(

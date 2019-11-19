@@ -1,0 +1,14 @@
+.logo {
+  width: 160px;
+  height: 40px;
+  background: url('../img/logo.jpg');
+  background-size: 160px;
+  margin: 12px 124px 0 0;
+  float: left;
+  border-radius: 6px;
+}
+.who{
+  color: salmon; 
+  font-weight: bold;
+  margin-left: 6px;
+}

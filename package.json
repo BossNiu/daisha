@@ -1,0 +1,25 @@
+{
+  "name": "daisha",
+  "version": "1.0.0",
+  "description": "带啥儿网（中国供销合作社）后台管理系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BossNiu/daisha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BossNiu/daisha/issues"
+  },
+  "homepage": "https://github.com/BossNiu/daisha#readme",
+  "dependencies": {
+    "umi-plugin-react": "^1.14.3"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0"
+  }
+}
