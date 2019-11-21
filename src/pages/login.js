@@ -10,7 +10,7 @@ const onClose = e => {
 };
 
 export default function (props) {
-  let [list, setList] = useState([])
+  let [list, setList] = useState([]) 
   var userInput = '';
   var pasInput = '';
  
@@ -33,7 +33,7 @@ export default function (props) {
           className={styles.password}
             placeholder="请输入密码"
             prefix={<Icon type="unlock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-          />
+          /> 
           <br/>
           <br/>
         <Button type="primary" block className={styles.login} onClick={() => {

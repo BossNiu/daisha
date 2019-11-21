@@ -1,12 +1,12 @@
-import * as api from '../until/getUsers'
+import * as api from '../until/userfind';
 
 export default {
-  namespace: 'users',  //命名空间，一般和文件名一致；
+  namespace: 'userfind',  //命名空间，一般和文件名一致；
   state: {
     name: '欧阳娜娜',
     age: 18,
     des: '真漂亮啊',
-    list:[]
+    list:{}
   },
   reducers: {
     change(state, { payload }) {
@@ -16,13 +16,12 @@ export default {
   effects: {
     *getData(payload, { call, put }) {
       console.log(payload)
-      const result = yield call(api.getUsers,payload.payload.token.token)
+      const result = yield call(api.userfind,payload.payload.id,payload.payload.token)
       console.log(result)
       yield put({
         type: 'change',
         payload:{
-          list: result.data.users,
-          page:result.data.totalCount
+          list: result.data
         }
       })
     }

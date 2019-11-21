@@ -20,7 +20,10 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'users', ...(require('D:/daisha/src/models/users.js').default) });
+  app.model({ namespace: 'product', ...(require('D:/daisha/src/models/product.js').default) });
+app.model({ namespace: 'useraddr', ...(require('D:/daisha/src/models/useraddr.js').default) });
+app.model({ namespace: 'userfind', ...(require('D:/daisha/src/models/userfind.js').default) });
+app.model({ namespace: 'users', ...(require('D:/daisha/src/models/users.js').default) });
   return app;
 }
 

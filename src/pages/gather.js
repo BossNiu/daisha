@@ -14,9 +14,11 @@ export default function () {
   return (
     <div className={styles.normal}>
       <div className={styles.box}>
-      <Link to='users'><button className={styles.btn}>用户管理</button></Link>
+        <button className={styles.btn} onClick={() => {
+          window.location.href='/users/userlist'
+     }}>用户管理</button>
+      <Link to='/product/prolist'><button className={styles.btn}>商品管理</button></Link>
       <button className={styles.btn}>商品管理</button>
-      <button className={styles.btn}>商品分管理</button>
       <button className={styles.btn}>订单管理</button>
       </div>
 

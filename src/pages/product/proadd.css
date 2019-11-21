@@ -1,0 +1,51 @@
+
+
+.normal h1{
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+  text-align:center;
+} 
+.box{
+  width: 70%;
+  height: 800px;
+  background: rgba(0, 0, 0, .1);
+  margin-left: 180px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.shuru{
+  display: inline;
+  width: 60%;
+  height: 50px;
+}
+.label{
+  font-size: 16px;
+  font-weight: bold;
+  color: saddlebrown;
+  margin-right: 40px;
+  margin-left: 80px;
+}
+.box p{
+  margin-bottom: 40px;
+}
+.add{
+  display: block;
+  width: 140px;
+  height: 48px;
+  background: salmon;
+  border: sienna solid 3px;
+  border-radius: 14px;
+  font-size: 16px;
+  color: wheat;
+  font-weight: bold;
+  letter-spacing: 4px;
+  transition: all .3s;
+  margin-left: 520px;
+  margin-top: 40px;
+}
+.add:hover{
+  background: yellow;
+  color: brown;
+}
+ 
