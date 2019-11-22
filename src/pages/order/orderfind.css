@@ -1,13 +1,12 @@
 
-
 .box{
   width: 70%;
-  height: 400px;
-  background: rgba(236, 221, 3, 0.5);
+  height: 500px;
+  background: rgba(93, 214, 164, 0.5);
   margin-left: 180px;
   padding: 30px;
   border-radius: 20px;
-  position: relative;
+  position: relative; 
 }
 .box p{
   display: inline;
@@ -48,7 +47,7 @@
   height: 35px;
   display: block;
   margin-left: 270px;
-  margin-top: 20px;
+  margin-top: 156px;
 }
 .btn_change{
   position: absolute;
@@ -61,8 +60,8 @@
   border: 0;
   transition: all .3s;
   outline: 0;
-  left: 650px;
-  top: 168px;
+  left: 620px;
+  top: 248px;
 }
 .btn_change:hover{
   background: yellow;
@@ -72,64 +71,14 @@
 .card{
   position: absolute;
   left: 20px;
-  top: 114px;
-  height: 260px;
+  top: 134px;
+  height: 320px;
 }
 .xinxi{
   margin-top: 12px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-
-}
-.psw_change{
-  font-size: 16px;
-  color: seagreen;
-  float: right;
-  font-weight: bold;
-  margin-right: 310px;
-  margin-top: 20px;
-}
-.psw_gai{
-  width: 40%;
-  display: block;
-  margin-left: 270px;
-  margin-top: 50px;
-}
-.psw_btn{
-  position: absolute;
-  top: 275px;
-  left: 650px;
-  width: 80px;
-  height: 40px;
-  border-radius: 10px; 
-  background: sienna;
-  color: aqua;
-  font-size: 14px;
-  border: 0;
-  transition: all .3s;
-  outline: 0;
-}
-.psw_btn:hover{
-  background: yellow;
-  color: saddlebrown;
-}
-.del_btn{
-  position: absolute;
-  top: 330px;
-  left: 650px;
-  width: 80px;
-  height: 40px;
-  border-radius: 10px;
-  background: sienna;
-  color: aqua;
-  font-size: 14px;
-  border: 0;
-  transition: all .3s;
-  outline: 0;
-}
-.del_btn:hover{
-  background: yellow;
-  color: saddlebrown;
+  text-overflow: ellipsis; 
+  margin-left: -40px;
 }

@@ -29,6 +29,61 @@ const routes = [
     component: require('../welcome.js').default,
   },
   {
+    path: '/classify',
+    exact: false,
+    component: require('../classify/_layout.js').default,
+    routes: [
+      {
+        path: '/classify/classadd',
+        exact: true,
+        component: require('../classify/classadd.js').default,
+      },
+      {
+        path: '/classify/classfind',
+        exact: true,
+        component: require('../classify/classfind.js').default,
+      },
+      {
+        path: '/classify/classlist',
+        exact: true,
+        component: require('../classify/classlist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
+    path: '/order',
+    exact: false,
+    component: require('../order/_layout.js').default,
+    routes: [
+      {
+        path: '/order/orderfind',
+        exact: true,
+        component: require('../order/orderfind.js').default,
+      },
+      {
+        path: '/order/orderlist',
+        exact: true,
+        component: require('../order/orderlist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
     path: '/product',
     exact: false,
     component: require('../product/_layout.js').default,

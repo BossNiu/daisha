@@ -54,3 +54,21 @@
   margin-right: 6px;
   font-size: 12px;
 }
+.exist{
+  width: 80px;
+  height: 30px;
+  border:0;
+  border-radius: 4px;
+  background: aqua;
+  color: rgb(221, 31, 31);
+  outline: 0;
+  position: absolute;
+  left: 1100px;
+  font-weight: bold;
+  transition: all .3s;
+}
+.exist:hover{
+  background: yellow;
+  color: saddlebrown;
+  border: solid 2px saddlebrown;
+}

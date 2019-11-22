@@ -3,11 +3,11 @@
 .box{
   width: 70%;
   height: 500px;
-  background: rgba(236, 221, 3, 0.5);
+  background: rgba(93, 214, 164, 0.5);
   margin-left: 180px;
   padding: 30px;
   border-radius: 20px;
-  position: relative;
+  position: relative; 
 }
 .box p{
   display: inline;

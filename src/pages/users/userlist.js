@@ -9,7 +9,7 @@ import {useEffect} from 'react'
 
 
 
-function Userlist(props) {
+function userlist(props) {
   
  
   const columns = [
@@ -43,7 +43,7 @@ function Userlist(props) {
                props.dispatch({
                 type: 'users/getData',
                 payload: {
-                  token: { token: localStorage.getItem('token') }
+                  token: localStorage.getItem('token') 
                 }
               })
              })
@@ -59,7 +59,7 @@ function Userlist(props) {
     props.dispatch({
       type: 'users/getData',
       payload: {
-        token: { token: localStorage.getItem('token') }
+       token: localStorage.getItem('token') 
       }
     })
   },[])
@@ -78,23 +78,12 @@ function Userlist(props) {
 return (
   <Table columns={columns} dataSource={data} pagination={{
     pageSize: 5, total: totalPage, onChange: (page, pageSize) => {
-      console.log(page, pageSize)
-      api1.getUsers(localStorage.getItem('token'), { per: pageSize, page: page }).then((data1) => {
-        // console.log(data1.data.users);
-        var list = data1.data.users;
-        // console.log(data1.data)
-        console.log(data[(page - 1) * pageSize])
-        list.map((item, i) => {
-        
-          const obj = {}
-          obj.key = i + 1;
-          obj.id = item._id
-          obj.username = item.userName
-          obj.time = item.createdAt
-          // data[(page - 1) * pageSize + i] = obj;
-          data.push(obj)
-        })
-
+      props.dispatch({
+        type: 'users/getData',
+        payload: {
+          token: localStorage.getItem('token'),
+          params:{per:5,page:page}
+        }
       })
     }
   }
@@ -103,4 +92,4 @@ return (
 )
 
 }
-export default connect(state=>state.users)(Userlist)
+export default connect(state=>state.users)(userlist)

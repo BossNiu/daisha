@@ -8,7 +8,7 @@
 }  
 .box{
   width: 70%;
-  height: 800px;
+  height: 600px;
   background: rgba(0, 0, 0, .1);
   margin-left: 180px;
   padding: 30px;
@@ -41,8 +41,9 @@
   font-weight: bold;
   letter-spacing: 4px;
   transition: all .3s;
-  margin-left: 520px;
-  margin-top: 40px;
+  margin-left: 300px;
+  margin-top: 240px;
+  outline: 0;
 }
 .add:hover{
   background: yellow;

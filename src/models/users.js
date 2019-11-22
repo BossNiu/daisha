@@ -16,7 +16,7 @@ export default {
   effects: {
     *getData(payload, { call, put }) {
       console.log(payload)
-      const result = yield call(api.getUsers,payload.payload.token.token)
+      const result = yield call(api.getusers,payload.payload.token,payload.payload.params)
       console.log(result)
       yield put({
         type: 'change',

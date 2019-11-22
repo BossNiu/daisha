@@ -1,4 +1,5 @@
 
+
 .delete{
   width: 60px;
   height: 30px;
@@ -6,7 +7,7 @@
   border-radius: 5px;
   border: 0;
   background: sienna;
-  color: yellow;
+  color: yellow; 
   transition: all .3s;
   outline: 0; 
 }

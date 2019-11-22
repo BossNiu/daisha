@@ -1,7 +1,7 @@
-import * as api from '../until/prod';
+import * as api from '../until/order';
 
 export default {
-  namespace: 'product',  //命名空间，一般和文件名一致；
+  namespace: 'order',  //命名空间，一般和文件名一致；
   state: {
     name: '欧阳娜娜',
     age: 18,
@@ -17,19 +17,19 @@ export default {
   effects: {
     *getList(payload, { call, put }) {
       console.log(payload)
-      const result = yield call(api.prodList,payload.payload.token,payload.payload.params)
-      console.log(result)
+      const result = yield call(api.orderList,payload.payload.token,payload.payload.params)
+      console.log(result.data)
       yield put({
         type: 'change',
         payload:{
-          list: result.data.products,
+          list: result.data.orders,
           total:result.data.totalCount
         }
       })
     },
     *del(payload, { call, put }) {
       console.log(payload)
-      const result = yield call(api.prodDel,payload.payload.id,payload.payload.token)
+      const result = yield call(api.orderDel,payload.payload.id,payload.payload.token)
       console.log(result)
       yield put({
         type: 'change',
@@ -41,7 +41,7 @@ export default {
     },
     *find(payload, { call, put }) {
       console.log(payload)
-      const result = yield call(api.prodFind,payload.payload.id,payload.payload.token)
+      const result = yield call(api.orderFind,payload.payload.id,payload.payload.token)
       console.log(result.data)
       yield put({
         type: 'change',

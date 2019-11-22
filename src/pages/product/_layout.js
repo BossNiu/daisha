@@ -23,14 +23,15 @@ export default function (props) {
         <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
           <div className={styles.logo} />
           <Menu
-            theme="dark"
+            theme="dark" 
             mode="horizontal"
-            // defaultSelectedKeys={["1"]}
+            defaultSelectedKeys={["1"]}
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key="1"><Link to='/product/prolist'>商品列表</Link></Menu.Item>
             <Menu.Item key="2"><Link to='/product/proadd'>新增商品</Link></Menu.Item>
             <Menu.Item key="3"><Link to='/product/profind'>商品操作</Link></Menu.Item>
+            <Menu.Item key="4"><Link to='/gather'>回到导航</Link></Menu.Item>
           </Menu>
         </Header>
         <Content style={{ padding: '0 50px', marginTop: 64 }}>

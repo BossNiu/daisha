@@ -1,14 +1,13 @@
 
-import styles from './prolist.css';
+import styles from './classlist.css';
 import {useEffect} from 'react'
 import { connect } from 'dva';
 import { Table, Divider, Tag,Modal, Button,message  } from 'antd';
 
-
-function proList(props) {
+function classlist(props) {
   useEffect(() => {
     props.dispatch({
-      type: 'product/getList',
+      type: 'classify/getList',
       payload: {
        token: localStorage.getItem('token')
       }
@@ -20,42 +19,32 @@ function proList(props) {
     const obj = {}
     obj.key = i + 1; 
     obj.id = item._id
-    obj.coverImg = item.coverImg
+    // obj.coverImg = item.coverImg
     obj.name = item.name
-    obj.price = item.price
-    obj.kucun = item.quantity
+    obj.des = item.descriptions
+    // obj.price = item.price
+    // obj.kucun = item.quantity
     obj.time = item.createdAt
     data.push(obj)
   })
   var totalPage = props.total;
-  
+
   const columns = [
     {
-      title: '商品ID',
+      title: '商品分类ID',
       dataIndex: 'id',
       key: 'id',
       render: text => <a>{text}</a>,
     },
     {
-      title: '商品展示',
-      dataIndex: 'coverImg',
-      key: 'coverImg',
-      render: coverImg => <img src={coverImg} className={styles.image}/>,
-    },
-    {
-      title: '商品名',
+      title: '商品分类名',
       dataIndex: 'name',
       key: 'name',
     },
     {
-      title: '价格',
-      dataIndex: 'price',
-      key: 'price',
-    },
-    {
-      title: '库存',
-      dataIndex: 'kucun',
-      key: 'kucun',
+      title: '分类描述',
+      dataIndex: 'des',
+      key: 'des',
     },
     {
       title: '更新时间',
@@ -71,17 +60,17 @@ function proList(props) {
         <span>
           <button className={styles.delete} onClick={() => {
             props.dispatch({
-              type: 'product/del',
+              type: 'classify/del',
               payload: {
                 id:recode.id,
                token: localStorage.getItem('token') 
               }
             })
             props.dispatch({
-              type: 'product/getList', 
+              type: 'classify/getList', 
               payload: {
                token: localStorage.getItem('token') 
-              }
+              } 
             })
             // message.success('删除成功')
             //  console.log(recode.id)
@@ -112,7 +101,7 @@ function proList(props) {
         pageSize: 10, total: totalPage, onChange: (page, pageSize) => {
           console.log(page)
           props.dispatch({
-            type: 'product/getList',
+            type: 'classify/getList',
             payload: {
               token: localStorage.getItem('token'),
               params:{per:10,page:page}
@@ -122,7 +111,8 @@ function proList(props) {
   }
 
   } />
-    </div>
+    </div> 
   );
 }
-export default connect(state=>state.product)(proList)
+
+export default connect(state=>state.classify)(classlist)
