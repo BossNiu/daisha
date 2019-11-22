@@ -1,0 +1,135 @@
+
+
+.box{
+  width: 70%;
+  height: 400px;
+  background: rgba(236, 221, 3, 0.5);
+  margin-left: 180px;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+.box p{
+  display: inline;
+} 
+.who{
+  display: inline-block;
+  width: 60%;
+  height: 50px;
+}
+.box p span{
+  font-size: 16px;
+  font-weight: bold;
+  color: seagreen;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.btn{
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background: sienna;
+  color: aqua;
+  font-size: 14px;
+  border: 0;
+  margin-top: 20px;
+  transition: all .3s;
+  outline: 0;
+  margin-left: 40px;
+}
+.btn:hover{
+  background: yellow;
+  color: saddlebrown;
+  border: saddlebrown solid 2px;
+}
+.change{
+  width: 40%;
+  height: 35px;
+  display: block;
+  margin-left: 270px;
+  margin-top: 20px;
+}
+.btn_change{
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background: sienna;
+  color: aqua;
+  font-size: 14px;
+  border: 0;
+  transition: all .3s;
+  outline: 0;
+  left: 650px;
+  top: 168px;
+}
+.btn_change:hover{
+  background: yellow;
+  color: saddlebrown;
+  border: saddlebrown solid 2px;
+}
+.card{
+  position: absolute;
+  left: 20px;
+  top: 114px;
+  height: 260px;
+}
+.xinxi{
+  margin-top: 12px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+.psw_change{
+  font-size: 16px;
+  color: seagreen;
+  float: right;
+  font-weight: bold;
+  margin-right: 310px;
+  margin-top: 20px;
+}
+.psw_gai{
+  width: 40%;
+  display: block;
+  margin-left: 270px;
+  margin-top: 50px;
+}
+.psw_btn{
+  position: absolute;
+  top: 275px;
+  left: 650px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px; 
+  background: sienna;
+  color: aqua;
+  font-size: 14px;
+  border: 0;
+  transition: all .3s;
+  outline: 0;
+}
+.psw_btn:hover{
+  background: yellow;
+  color: saddlebrown;
+}
+.del_btn{
+  position: absolute;
+  top: 330px;
+  left: 650px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background: sienna;
+  color: aqua;
+  font-size: 14px;
+  border: 0;
+  transition: all .3s;
+  outline: 0;
+}
+.del_btn:hover{
+  background: yellow;
+  color: saddlebrown;
+}

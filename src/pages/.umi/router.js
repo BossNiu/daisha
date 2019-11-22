@@ -9,11 +9,152 @@ const Router = routerRedux.ConnectedRouter;
 
 const routes = [
   {
+<<<<<<< HEAD
+=======
+    path: '/gather',
+    exact: true,
+    component: require('../gather.js').default,
+  },
+  {
+>>>>>>> niu
     path: '/',
     exact: true,
     component: require('../index.js').default,
   },
   {
+<<<<<<< HEAD
+=======
+    path: '/login',
+    exact: true,
+    component: require('../login.js').default,
+  },
+  {
+    path: '/welcome',
+    exact: true,
+    component: require('../welcome.js').default,
+  },
+  {
+    path: '/classify',
+    exact: false,
+    component: require('../classify/_layout.js').default,
+    routes: [
+      {
+        path: '/classify/classadd',
+        exact: true,
+        component: require('../classify/classadd.js').default,
+      },
+      {
+        path: '/classify/classfind',
+        exact: true,
+        component: require('../classify/classfind.js').default,
+      },
+      {
+        path: '/classify/classlist',
+        exact: true,
+        component: require('../classify/classlist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
+    path: '/order',
+    exact: false,
+    component: require('../order/_layout.js').default,
+    routes: [
+      {
+        path: '/order/orderfind',
+        exact: true,
+        component: require('../order/orderfind.js').default,
+      },
+      {
+        path: '/order/orderlist',
+        exact: true,
+        component: require('../order/orderlist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
+    path: '/product',
+    exact: false,
+    component: require('../product/_layout.js').default,
+    routes: [
+      {
+        path: '/product/proadd',
+        exact: true,
+        component: require('../product/proadd.js').default,
+      },
+      {
+        path: '/product/profind',
+        exact: true,
+        component: require('../product/profind.js').default,
+      },
+      {
+        path: '/product/prolist',
+        exact: true,
+        component: require('../product/prolist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
+    path: '/users',
+    exact: false,
+    component: require('../users/_layout.js').default,
+    routes: [
+      {
+        path: '/users/address',
+        exact: true,
+        component: require('../users/address.js').default,
+      },
+      {
+        path: '/users/useradd',
+        exact: true,
+        component: require('../users/useradd.js').default,
+      },
+      {
+        path: '/users/userinfo',
+        exact: true,
+        component: require('../users/userinfo.js').default,
+      },
+      {
+        path: '/users/userlist',
+        exact: true,
+        component: require('../users/userlist.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
+  },
+  {
+>>>>>>> niu
     component: () =>
       React.createElement(
         require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')

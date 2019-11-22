@@ -1,0 +1,50 @@
+
+.normal {
+  background: url('../img/welcome.jpg') no-repeat;
+  background-size: 1400px;
+  height: 625px;
+  overflow: hidden;
+}
+.box{
+  width: 400px;
+  height: 400px;
+  background: rgba(199, 191, 191, 0.5);
+  border-radius: 16px;
+  margin-left: 470px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.username{
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 30px;
+  height: 40px;
+}
+.password{
+  width: 300px;
+  margin-left: 50px;
+  height: 40px;
+}
+.login{
+  width: 300px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.tit{
+  font-size: 30px;
+  color: brown;
+  font-weight: bold;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.des{
+  font-size: 20px;
+  color: rgb(192, 13, 111);
+  margin-left: 130px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 20px;
+}
+ 

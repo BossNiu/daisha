@@ -43,6 +43,22 @@ export const HeadPOST = (url,token,params)=>{
   })
 }
 
+<<<<<<< HEAD
+=======
+export const HeadPUT = (url,token,params)=>{
+  return axios({
+      url:`${baseUrl}${url}`,
+      method:'put',
+      headers:{
+          "authorization":"Bearer "+token
+      },
+      data:params
+  }).then((data)=>{
+      return data;
+  })
+}
+
+>>>>>>> niu
 export const HeadDELETE = (url,token,params)=>{
   return axios({
       url:`${baseUrl}${url}`,
